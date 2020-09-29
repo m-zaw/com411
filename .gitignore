@@ -130,3 +130,6 @@ dmypy.json
 
 # repl.it
 .replit
+
+# vscode
+.vscode/
