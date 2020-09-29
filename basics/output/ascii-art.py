@@ -1,5 +1,14 @@
 # Display a box
 print("##########")
-print("#        #")
-print("#        #")
+print("# O    O #")
+print("#  ----  #")
 print("##########")
+
+# X-Wing
+print("""
+        .=.
+       '==c|
+       [)-+|
+       //'_|
+      /]==;\
+""")
