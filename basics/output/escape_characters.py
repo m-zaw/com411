@@ -5,5 +5,4 @@ print("\\ Displays a back slash")
 print("\" Displays a double quote")
 print("\' Displays a single quote")
 # Task
-print("\n")
-print("\t \"I am Beep!\"")
+print("\n\t \"I am Beep!\"")
