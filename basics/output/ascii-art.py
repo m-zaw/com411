@@ -4,7 +4,7 @@ print("# O    O #")
 print("#  ----  #")
 print("##########")
 
-# X-Wing
+# R2D2
 print("""
         .=.
        '==c|
