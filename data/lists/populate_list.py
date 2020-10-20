@@ -6,7 +6,7 @@ def menu():
     print("Please select a direction:")
     direction = directions()
     for a in range(len(direction)):
-        print("{0}:{1}".format(a,direction[a]))
+        print("{}:{}".format(a,direction[a]))
     user_choice = int(input())
     return direction[user_choice]
 
