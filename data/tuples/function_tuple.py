@@ -3,7 +3,7 @@ def likelihood():
     return (min(likelihoods), max(likelihoods))
 
 def run():
-    l = likelihood()
-    print("Minimum likelihood of falling: {}% \nMaximum likelihood of falling: {}%".format(l[0], l[1]))
+    li = likelihood()
+    print("Minimum likelihood of falling: {}% \nMaximum likelihood of falling: {}%".format(li[0], li[1]))
 
 run()
