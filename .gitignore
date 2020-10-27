@@ -130,7 +130,10 @@ dmypy.json
 
 # repl.it
 .replit
+*.replit
 
 # vscode
 .vscode/
 tempCodeRunnerFile.py
+*.code-workspace
+requirements.txt
