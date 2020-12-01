@@ -1,12 +1,10 @@
 class Robot:
-
     laws = "Protect, Obey and Survive"
 
     def the_laws(self):
         print(Robot.laws)
 
     def __init__(self):
-
         self.name = "Robot"
         self.age = 0
 
@@ -20,7 +18,6 @@ if (__name__ == "__main__"):
 
 
 class Human:
-
     MAX_ENERGY = 100
 
     def __init__(self):
