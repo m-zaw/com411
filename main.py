@@ -1,5 +1,6 @@
-import basics.output.simple_message as simple_message
 import basics.output.multiline_message as multiline_message
+import basics.output.simple_message as simple_message
+
 
 def run_block_a():
     print("Which program in 'Block A: Basics' do you wish to run?")
@@ -9,10 +10,11 @@ def run_block_a():
     elif (response == "multiline_message"):
         multiline_message.run()
 
+
 def run():
     is_running = True
 
-    while(is_running):
+    while (is_running):
         print("What would you like to do?")
         print("[a] Run 'Block A: Basics' programs")
         print("[q] Quit")
@@ -24,5 +26,6 @@ def run():
             break
         else:
             print("Invalid option! Please try again.")
+
 
 run()

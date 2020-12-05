@@ -1,7 +1,8 @@
 # Requires update!
 
-import matplotlib.pyplot as plt
 import csv
+
+import matplotlib.pyplot as plt
 
 
 def read_data():
@@ -55,15 +56,15 @@ def run():
             survived = survived + 1
         else:
             died = died + 1
-    axs[0,1].set_xlabel('Status')
-    axs[0,1].set_ylabel('Number')
-    axs[0,1].bar(["Survived", "Died"], [survived, died])
-  
-    axs[1,1].set_xlabel('Age')
-    axs[1,1].set_ylabel('Fare')
-    axs[1,1].scatter(list(data["Age"]), list(data["Fare"]))
+    axs[0, 1].set_xlabel('Status')
+    axs[0, 1].set_ylabel('Number')
+    axs[0, 1].bar(["Survived", "Died"], [survived, died])
+
+    axs[1, 1].set_xlabel('Age')
+    axs[1, 1].set_ylabel('Fare')
+    axs[1, 1].scatter(list(data["Age"]), list(data["Fare"]))
     print(list(data["Age"]))
-    
+
     plt.tight_layout()
     plt.show()
 

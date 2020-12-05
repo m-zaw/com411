@@ -2,13 +2,15 @@ def directions():
     directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
     return directions
 
+
 def menu():
     print("Please select a direction:")
     direction = directions()
     for a in range(len(direction)):
-        print("{}:{}".format(a,direction[a]))
+        print("{}:{}".format(a, direction[a]))
     user_choice = int(input())
     return direction[user_choice]
+
 
 def run():
     route = []
@@ -17,5 +19,6 @@ def run():
         user_choice = menu()
         route.append(user_choice)
     print("Escape Route: {}".format(route))
+
 
 run()

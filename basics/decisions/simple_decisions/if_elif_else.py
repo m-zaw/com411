@@ -1,5 +1,5 @@
 print("Towards which direction should I paint (up, down, left or right)?")
-direction = input() 
+direction = input()
 
 if (direction == "up"):
     print("\nI am painting in the upward direction!")

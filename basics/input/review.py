@@ -1,6 +1,7 @@
 import time
-import progressbar # please install progressbar2 package "python -m pip install progressbar2"
-import cowsay # please install cowsay package "python -m pip install cowsay"
+
+import cowsay  # please install cowsay package "python -m pip install cowsay"
+import progressbar  # please install progressbar2 package "python -m pip install progressbar2"
 
 for i in progressbar.progressbar(range(5), redirect_stdout=True):
     print("Loading awesomeness...")

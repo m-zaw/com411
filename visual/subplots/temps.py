@@ -10,8 +10,8 @@ def read_data(file_name):
 
 
 def run():
-    data = read_data("visual/subplots/temps.txt")
-    x = list(range(1, len(data)+1))
+    data = read_data("temps.txt")
+    x = list(range(1, len(data) + 1))
     fig, axs = plt.subplots(1, 2)
     axs[0].set_xlabel("Day")
     axs[0].set_ylabel("Temperature")

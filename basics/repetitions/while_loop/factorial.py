@@ -4,7 +4,7 @@ number = int(input())
 count = 0
 total = 1
 
-while ( count < number ):
+while (count < number):
     count = count + 1
     total = total * count
 

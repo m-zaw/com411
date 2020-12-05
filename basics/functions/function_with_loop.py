@@ -8,5 +8,6 @@ def cross_bridge(distance):
             print("Crossed step.")
         print("We must keep going!")
 
+
 cross_bridge(3)
 cross_bridge(5)

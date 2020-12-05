@@ -1,5 +1,6 @@
-import matplotlib.pyplot as plt
 import random as rnd
+
+import matplotlib.pyplot as plt
 
 
 def data():

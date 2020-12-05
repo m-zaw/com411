@@ -1,12 +1,10 @@
 class Robot:
-
     LAWS = "Protect, Obey and Survive"
 
     def the_laws():
         print(Robot.LAWS)
 
     def __init__(self, name="Robot", age=0):
-
         self.name = name
         self.age = age
 

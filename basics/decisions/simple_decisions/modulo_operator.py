@@ -1,5 +1,5 @@
 print("Please enter a whole number.")
-number = int(input()) 
+number = int(input())
 
 if (number % 2 == 0):
     print("\nThe number {} is an even number.".format(number))

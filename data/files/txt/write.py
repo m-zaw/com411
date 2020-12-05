@@ -31,7 +31,6 @@ def save(filename, data):
 
 
 def run():
-
     data = search("data/files/txt/books.txt")
     save("data/files/txt/section-books.txt", data)
 

@@ -1,5 +1,5 @@
 print("Please enter the first number.")
-a = int(input()) 
+a = int(input())
 
 print("Please enter the second number.")
 b = int(input())

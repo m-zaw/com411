@@ -7,7 +7,8 @@ print("Please enter the maximum value:")
 max_num = int(input())
 r_num = rnd.randrange(min_num, max_num, 1)
 
-print("I am thinking of a number between {} and {}. Can you guess what it is?".format(min_num,max_num))
+print("I am thinking of a number between {} and {}. Can you guess what it is?".format(min_num, max_num))
+
 
 def play_guess_the_number():
     guess_num = int(input())
@@ -22,5 +23,6 @@ def play_guess_the_number():
         print("Your guess is too low.")
         print("Try again:")
         play_guess_the_number()
+
 
 play_guess_the_number()

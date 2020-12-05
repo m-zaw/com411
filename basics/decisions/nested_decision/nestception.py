@@ -8,7 +8,7 @@ if (place == "in the bedroom"):
     if (bedroom_place == "under the bed"):
         print("Found some shoes but no battery")
     else:
-        print("Found some mess but no battery.") 
+        print("Found some mess but no battery.")
 
 elif (place == "in the bathroom"):
     print("Where in the bathroom should I look?")

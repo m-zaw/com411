@@ -7,6 +7,7 @@ def steps():
     likelihoods.append(("step 5", 4))
     return likelihoods
 
+
 def run():
     likelihoods = steps()
     good_steps = []
@@ -19,5 +20,6 @@ def run():
             good_steps.append(likelihood)
 
     print("Good steps: {}, Bad steps: {}".format(len(good_steps), len(bad_steps)))
+
 
 run()
