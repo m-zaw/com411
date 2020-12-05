@@ -137,3 +137,7 @@ dmypy.json
 tempCodeRunnerFile.py
 *.code-workspace
 requirements.txt
+
+# pycharm
+.idea/
+.idea
