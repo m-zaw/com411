@@ -8,9 +8,6 @@ class Inhabitant:
     def grow(self):
         self.age = self.age + 1
 
-    def display(self):
-        print(f"I am {self.name}")
-
     def eat(self, amount):
         if(self.energy + amount > Inhabitant.MAX_ENERGY):
             self.energy = Inhabitant.MAX_ENERGY
