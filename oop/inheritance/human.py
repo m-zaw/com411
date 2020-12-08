@@ -1,35 +1,25 @@
+from abc import ABC, abstractmethod
 from inhabitant import Inhabitant
 
 
 class Human(Inhabitant):
 
-    # class (constant) attribute
-    MAX_ENERGY = 100
-
-    # initialiser
-    def __init__(self, name="Human", age=0):
+    def __init__(self, name):
+        super().__init__()
         self.name = name
-        self.age = age
-        self.energy = Human.MAX_ENERGY
 
-    # magic methods
-    def __repr__(self):
-        return f'human(name={self.name}, age={self.age}, energy={self.energy})'
+    def display(self):
+        print("I am {} and I am {} years old, I have an energy of {}".format(
+            self.name, self.age, self.energy))
 
     def __str__(self):
-        return f'My name is {self.name} and I am {self.age} years old and my energy is {self.energy}.'
+        return f'My name is {self.name} and I am {self.age} years old.'
 
-    # instance methods
-    def display(self):
-        print(f"I am {self.name}")
+    def __repr__(self):
+        return f'(name={self.name}, age={self.age},energy={self.energy})'
 
 
 if (__name__ == "__main__"):
-    human = Human()
+    human = Human("Harry")
     print(repr(human))
     human.move(10)
-    print(repr(human))
-    human.eat(5)
-    print(repr(human))
-    human.eat(20)
-    print(repr(human))
