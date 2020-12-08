@@ -1,62 +1,48 @@
 from human import Human
 from robot import Robot
-import random
+
+# Define Planet class
 
 
-class Planet():
-
+class Planet:
+    # Instance variables
     def __init__(self):
         self.inhabitants = []
 
-    def add_human(self, num):
-        name = "human" + num
-        human = Human(name)
-        self.inhabitants.append(human)
+    # Instance method for adding inhabitants
+    def add_inhabitant(self, inhabitant):
+        self.inhabitants.append(inhabitant)
 
-    def remove_human(self):
-        remove = False
-        for species in self.inhabitants:
-            if isinstance(species, Human) and not remove:
-                self.inhabitants.remove(species)
-                remove = True
-        if not remove:
-            print("No Humans to remove.")
+    # Instance method for removing inhabitants
+    def remove_inhabitant(self, inhabitant):
+        self.inhabitants.remove(inhabitant)
 
-    def add_robot(self, num):
-        name = "robot" + num
-        robot = Robot(name)
-        self.inhabitants.append(robot)
-
-    def remove_robot(self):
-        remove = False
-        for species in self.inhabitants:
-            if isinstance(species, Robot) and not remove:
-                self.inhabitants.remove(species)
-                remove = True
-        if not remove:
-            print("No robots to remove.")
-
+# Magic methods for displaying data
     def __repr__(self):
-        robot = 0
-        human = 0
-        for species in self.inhabitants:
-            if isinstance(species, Human):
-                human += 1
-            else:
-                robot += 1
-
-        return f"There are a total of {human} Humans and a total of {robot} Robots on this planet"
+        return f"planet(inhabitants= {self.inhabitants})"
 
     def __str__(self):
-        robots = []
-        humans = []
-        h, r = 0, 0
-        for species in self.inhabitants:
-            if isinstance(species, Human):
-                humans.append(species)
-                h += 1
-            else:
-                robots.append(species)
-                r += 1
+        return f"There are {len(self.inhabitants)} inhabitants on this planet."
 
-        return f"Humans are: {humans} in total {h} and Robots are: {robots} in total {r}"
+
+# Testing area
+if (__name__ == "__main__"):
+    planet = Planet()
+
+    darren = Human("Darren")
+    beep = Robot("Beep")
+    bop = Robot("Bop")
+    bender = Robot("Bender")
+
+    planet.add_inhabitant(darren)
+    print(planet)
+    planet.add_inhabitant(beep)
+    print(planet)
+
+    planet.add_inhabitant(bop)
+    planet.add_inhabitant(bender)
+    print(planet)
+
+    planet.remove_inhabitant(bender)
+    planet.remove_inhabitant(darren)
+    print(planet)
